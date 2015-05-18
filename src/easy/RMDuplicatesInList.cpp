@@ -3,7 +3,7 @@
 // Author      : wp
 // Version     :
 // Copyright   : wp
-// Description : Hello World in C++, Ansi-style
+// Description : remove the duplicates in the linked list
 //============================================================================
 
 #include <iostream>

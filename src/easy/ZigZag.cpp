@@ -3,7 +3,7 @@
 // Author      : wp
 // Version     :
 // Copyright   : wp
-// Description : Hello World in C++, Ansi-style
+// Description : ZigZag array handling
 //============================================================================
 
 #include <iostream>

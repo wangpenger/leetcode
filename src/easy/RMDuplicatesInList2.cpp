@@ -3,7 +3,7 @@
 // Author      : wp
 // Version     :
 // Copyright   : wp
-// Description : Hello World in C++, Ansi-style
+// Description : remove the duplicates in the linked list
 //============================================================================
 
 #include <iostream>
@@ -75,7 +75,7 @@ ListNode* deleteDuplicates_mothod2(ListNode* head)
 
 void test(ListNode* header)
 {
-	printf("¡¾input¡¿ :		");
+	printf("input>:		");
 	ListNode* head = header;
 	while(head)
 	{
@@ -87,7 +87,7 @@ void test(ListNode* header)
 	//ListNode* newNode = deleteDuplicates(header);
 	ListNode* newNode = deleteDuplicates_mothod2(header);
 
-	printf("¡¾output¡¿ :		");
+	printf("output> :		");
 	while(newNode)
 	{
 		printf("%d->", newNode->val);

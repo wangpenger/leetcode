@@ -2,7 +2,7 @@
 // Author      : wp
 // Version     :
 // Copyright   : wp
-// Description : Hello World in C++, Ansi-style
+// Description : get the max depth of the given binary tree.
 //============================================================================
 
 #include <iostream>

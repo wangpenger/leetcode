@@ -1,2 +1,2 @@
 # leetcode
-do implement exercises in leetcode.com
+personal solution for leetcode OJ.

@@ -20,7 +20,7 @@ struct ListNode
 	ListNode(int x) : val(x), next(NULL) {}
 };
 
-//for sorted list
+//the solution is for sorted list.
 ListNode* deleteDuplicates(ListNode* head)
 {
 	//only one element or no elements.
@@ -47,6 +47,7 @@ ListNode* deleteDuplicates(ListNode* head)
 	return p_ret;
 }
 
+//a simple solution is for sorted list.
 ListNode* deleteDuplicates_mothod2(ListNode* head)
 {
 	//only one element or no elements.
@@ -74,7 +75,7 @@ ListNode* deleteDuplicates_mothod2(ListNode* head)
 
 void test(ListNode* header)
 {
-	printf("¡¾input¡¿ :		");
+	printf("Â¡Â¾inputÂ¡Â¿ :		");
 	ListNode* head = header;
 	while(head)
 	{
@@ -86,7 +87,7 @@ void test(ListNode* header)
 	//ListNode* newNode = deleteDuplicates(header);
 	ListNode* newNode = deleteDuplicates_mothod2(header);
 
-	printf("¡¾output¡¿ :		");
+	printf("Â¡Â¾outputÂ¡Â¿ :		");
 	while(newNode)
 	{
 		printf("%d->", newNode->val);

@@ -22,16 +22,17 @@ struct ListNode
 };
 
 /**
-//for un-sorted list
+//for un-sorted/souted list, still need to be improved
 ListNode* deleteDuplicates(ListNode* head)
 {
 	set<int> nodeSet;
 
-	//only one element or no elements.
+	//if no elements, return directly.
 	if(!head)
 	{
 		return head;
 	}
+	//only one element, return directly.
 	if(!(head->next))
 	{
 		return new ListNode(head->val);;
@@ -56,7 +57,7 @@ ListNode* deleteDuplicates(ListNode* head)
 
 void test(ListNode* header)
 {
-	printf("¡¾input¡¿ :		");
+	printf("Â¡Â¾inputÂ¡Â¿ :		");
 	ListNode* head = header;
 	while(head)
 	{
@@ -67,7 +68,7 @@ void test(ListNode* header)
 
 	ListNode* newNode = deleteDuplicates(header);
 
-	printf("¡¾output¡¿ :		");
+	printf("Â¡Â¾outputÂ¡Â¿ :		");
 	while(newNode)
 	{
 		printf("%d->", newNode->val);

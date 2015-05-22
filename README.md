@@ -1,2 +1,2 @@
 # leetcode
-personal solution for leetcode OJ.
+solution for leetcode OJ.

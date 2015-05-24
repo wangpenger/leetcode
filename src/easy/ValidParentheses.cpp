@@ -36,7 +36,7 @@ bool isValid(string s)
 				return true;
 			}
 			strTmp = s.substr(0, i) + s.substr(i+2);
-			isValid(strTmp);
+			return isValid(strTmp);
 		}
 	}
 	return false;
@@ -44,10 +44,10 @@ bool isValid(string s)
 
 int main()
 {
-//	printf("isValid(%s)=%d\n", string("()").c_str(), isValid("()"));
+	printf("isValid(%s)=%d\n", string("()").c_str(), isValid("()"));
 	printf("isValid(%s)=%d\n", string("()[]{}").c_str(), isValid("()[]{}"));
-//	printf("isValid(%s)=%d\n", string("(]").c_str(), isValid("(]"));
-//	printf("isValid(%s)=%d\n", string("([)]").c_str(), isValid("([)]"));
-//	printf("isValid(%s)=%d\n", string("((").c_str(), isValid("(("));
-//	printf("isValid(%s)=%d\n", string("([])").c_str(), isValid("([])"));
+	printf("isValid(%s)=%d\n", string("(]").c_str(), isValid("(]"));
+	printf("isValid(%s)=%d\n", string("([)]").c_str(), isValid("([)]"));
+	printf("isValid(%s)=%d\n", string("((").c_str(), isValid("(("));
+	printf("isValid(%s)=%d\n", string("([])").c_str(), isValid("([])"));
 }
